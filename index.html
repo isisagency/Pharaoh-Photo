@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" id="htmlTag">
 
@@ -50,7 +51,6 @@ body{
     z-index:-2;
 }
 
-/* حركة الخلفية */
 @keyframes moveBg{
 
     0%{
@@ -67,7 +67,6 @@ body{
 
 }
 
-/* طبقة شفافة */
 .overlay{
     position:absolute;
     width:100%;
@@ -80,27 +79,16 @@ body{
 /* الكارت */
 .card{
     width:360px;
-
     max-width:90%;
-
     padding:35px;
-
     border-radius:30px;
-
     text-align:center;
-
     background:rgba(255,255,255,0.08);
-
     backdrop-filter:blur(15px);
-
     border:1px solid rgba(255,255,255,0.15);
-
     box-shadow:0 10px 40px rgba(0,0,0,0.5);
-
     color:white;
-
     animation:fadeUp 1.2s ease;
-
     user-select:none;
 }
 
@@ -108,32 +96,22 @@ body{
 .profile-img{
     width:150px;
     height:150px;
-
     object-fit:cover;
-
     border-radius:50%;
-
     border:4px solid white;
-
     margin-bottom:20px;
-
     box-shadow:0 0 20px rgba(255,255,255,0.4);
 }
 
 /* الاسم */
 h1{
     font-family:'Cinzel', serif;
-
     font-size:36px;
-
     margin-bottom:10px;
-
     letter-spacing:2px;
-
     animation:glow 3s infinite alternate;
 }
 
-/* Glow للاسم */
 @keyframes glow{
 
     from{
@@ -151,43 +129,32 @@ h1{
 /* الوصف */
 p{
     color:#ddd;
-
     margin-bottom:30px;
-
     font-size:17px;
 }
 
 /* روابط السوشيال */
 .social-links a{
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     gap:12px;
-
     text-decoration:none;
-
     color:white;
-
     padding:15px;
-
     margin:14px 0;
-
     border-radius:18px;
-
     font-size:18px;
-
     font-weight:bold;
-
     transition:0.35s;
 }
 
 /* الألوان */
+
 .whatsapp{
     background:linear-gradient(45deg,#25D366,#1ebe57);
 }
+
 .website{
     background:linear-gradient(45deg,#6a11cb,#2575fc);
     color:white;
@@ -205,15 +172,21 @@ p{
 .facebook{
     background:linear-gradient(45deg,#1877F2,#0d5fd3);
 }
+
 .tiktok{
     background:linear-gradient(45deg,#000000,#222222);
+    color:white;
+}
+
+/* Location */
+.location{
+    background:linear-gradient(45deg,#ff512f,#dd2476);
     color:white;
 }
 
 /* Hover */
 .social-links a:hover{
     transform:translateY(-4px) scale(1.03);
-
     box-shadow:0 8px 20px rgba(0,0,0,0.35);
 }
 
@@ -223,20 +196,21 @@ p{
 }
 
 /* التوقيع */
-.signature{
+.footer{
     margin-top:25px;
-
     font-size:14px;
-
     color:#ccc;
-
     opacity:0.8;
 }
 
-.signature span{
-    color:#fff;
-    font-weight:bold;
-    
+.footer a{
+    color:#0385f0;
+    text-decoration:none;
+    font-weight:normal;
+}
+
+.footer a:hover{
+    text-decoration:underline;
 }
 
 /* ظهور الكارت */
@@ -271,16 +245,6 @@ p{
     }
 
 }
-/* التوقيع أسفل كل المحتوى */
-footer {
-    width: 50%;
-    text-align: center;
-    margin-top: 10px;
-    color: white;
-    font-size: 7px;
-}
-.footer a { color: #0385f0; text-decoration: none; font-weight: normal; }
-.footer a:hover { text-decoration: underline; }
 
 </style>
 </head>
@@ -307,46 +271,79 @@ footer {
     <!-- السوشيال -->
     <div class="social-links">
 
-        <a href="http://wa.me/+201031450204" class="whatsapp" target="_blank">
+        <!-- WhatsApp -->
+        <a href="http://wa.me/+201031450204"
+           class="whatsapp"
+           target="_blank"
+           rel="noopener noreferrer">
             <i class="fab fa-whatsapp"></i>
             WhatsApp
         </a>
-        <a href="https://isis-agency.co/"
-   class="website"
-   target="_blank"
-   rel="noopener noreferrer">
-    <i class="fas fa-globe"></i>
-    Website
-</a>
 
-        <a href="https://www.instagram.com/pharaoh_photo_by_isis_agency?igsi=N3RndXBzdTdtY3do&utm_source=qr" class="instagram" target="_blank">
+        <!-- Website -->
+        <a href="https://isis-agency.co/"
+           class="website"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fas fa-globe"></i>
+            Website
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/pharaoh_photo_by_isis_agency?igsi=N3RndXBzdTdtY3do&utm_source=qr"
+           class="instagram"
+           target="_blank"
+           rel="noopener noreferrer">
             <i class="fab fa-instagram"></i>
             Instagram
         </a>
 
-        <a href="https://www.snapchat.com/@pharaoh-isis?sender_web_id=a570638d-9e36-4079-a902-b2ca39b3f048&device_type=desktop&is_copy_url=true" class="snapchat" target="_blank">
+        <!-- Snapchat -->
+        <a href="https://www.snapchat.com/@pharaoh-isis?sender_web_id=a570638d-9e36-4079-a902-b2ca39b3f048&device_type=desktop&is_copy_url=true"
+           class="snapchat"
+           target="_blank"
+           rel="noopener noreferrer">
             <i class="fab fa-snapchat"></i>
             Snapchat
         </a>
 
-        <a href="https://www.facebook.com/share/1GxaSSpMo3/?mibextid=wwXIfr" class="facebook" target="_blank">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/1GxaSSpMo3/?mibextid=wwXIfr"
+           class="facebook"
+           target="_blank"
+           rel="noopener noreferrer">
             <i class="fab fa-facebook-f"></i>
             Facebook
         </a>
+
+        <!-- TikTok -->
         <a href="https://www.tiktok.com/@pharaohphotobyisis?_r=1&_t=ZS-96V3HQbdBx6"
-   class="tiktok"
-   target="_blank"
-   rel="noopener noreferrer">
-    <i class="fab fa-tiktok"></i>
-    TikTok
-</a>
+           class="tiktok"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+            TikTok
+        </a>
+
+        <!-- Location - آخر زر -->
+        <a href="https://maps.app.goo.gl/CdEJxbroitSrbUqG9?g_st=ic"
+           class="location"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fas fa-location-dot"></i>
+            Location
+        </a>
 
     </div>
 
     <!-- التوقيع -->
     <div class="footer">
-        Des. by: Mansour khalifa<br><a href="https://link.gettap.co/mnswrkhlyfh8103175" 
-        target="_blank">Get in touch with us</a>
+        Des. by: Mansour khalifa<br>
+        <a href="https://link.gettap.co/mnswrkhlyfh8103175"
+           target="_blank"
+           rel="noopener noreferrer">
+            Get in touch with us
+        </a>
     </div>
 
 </div>
@@ -370,7 +367,6 @@ window.onload = function () {
         desc.innerHTML = "تصوير فوتوغرافي وفيديو";
 
         htmlTag.lang = "ar";
-
         htmlTag.dir = "rtl";
 
     }
@@ -382,7 +378,6 @@ window.onload = function () {
         desc.innerHTML = "Photography & Videography";
 
         htmlTag.lang = "en";
-
         htmlTag.dir = "ltr";
 
     }
@@ -393,3 +388,7 @@ window.onload = function () {
 
 </body>
 </html>
+```
+
+دلوقتي ترتيب الأزرار:
+**WhatsApp → Website → Instagram → Snapchat → Facebook → TikTok → Location**.
